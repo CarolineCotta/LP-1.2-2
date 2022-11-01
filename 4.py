@@ -1,11 +1,11 @@
-def primos(n):
-    for count in range(1, n+1):
-        if n % count == 0:
-            print("é primo", count)
-            return True
-        else:
-            print("não é", count)
-            return False
+def primo(n, count):
+    if n % count == 0:
+        return True
+
+    else:
+        return False
 
 
-print(primos(100))
+n = 100
+for count in range(2, n + 1):
+    print(primo(n, count))
